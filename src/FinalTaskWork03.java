@@ -36,9 +36,9 @@ public class FinalTaskWork03 {
             }
         }
         //Если таких строк будет много, то вывести первую.
-        for (int i : diffArray) {
-            if (i == max) {
-                indexMaxDiff = 0;
+        for (int i = 0; i < diffArray.length; i++) {
+            if (diffArray[i] == max) {
+                indexMaxDiff = i;
                 break;
             }
         }
